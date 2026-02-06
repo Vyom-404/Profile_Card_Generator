@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+
+.card {
+    width: 520px;
+    height: 640px;
+    background: #a0a0a0;
+    border-radius: 30px;
+    position: relative;
+    padding: 260px 70px 40px;
+}
+
+
+#userPhoto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+
+.details {
+    font-size: 22px;
+    color: #111;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+
+.label {
+    width: 170px;
+    font-weight: 500;
+}
+
+
+.value {
+    font-weight: 400;
+}
