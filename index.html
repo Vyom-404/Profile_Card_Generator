@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
+  <div class = "formBox">
     <h2>Enter your information</h2>
     <input
       id="nameInput"
@@ -23,11 +23,22 @@
       type="text"
       placeholder="Hobbies (comma separated)"
     >
+     <fieldset class="genderField">
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="Male" id="genderMale"> Male</label>
+      <label><input type="radio" name="gender" value="Female" id="genderFemale"> Female</label>
+      <label><input type="radio" name="gender" value="Other" id="genderOther"> Other</label>
+    </fieldset>
+
     <input
       id="phoneInput"
-      type="text"
+      type="tel"
       placeholder="Phone No"
+      inputmode="numeric"
+      pattern = "[0-9] {10}";
+      maxlength=10
     >
+    
     <button id = "generateBtn">Generate My Card</button>
   </div>
 
@@ -44,22 +55,26 @@
     <div class="details">
       <div class="row">
         <span class="label">Name :</span>
-        <span class="value">—</span>
+        <span class="value"></span>
       </div>
 
       <div class="row">
         <span class="label">Date Of Birth :</span>
-        <span class="value">—</span>
+        <span class="value"></span>
       </div>
 
       <div class="row">
         <span class="label">Hobbies :</span>
-        <span class="value">—</span>
+        <span class="value"></span>
       </div>
 
       <div class="row">
         <span class="label">Phone No :</span>
-        <span class="value">—</span>
+        <span class="value"></span>
+      </div>
+     <div class="row">
+        <span class="label">Gender :</span>
+        <span class="value"></span>
       </div>
     </div>
 
