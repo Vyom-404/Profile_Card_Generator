@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section id="formPage" class="page">
   <div class = "formBox">
     <h2>Enter your information</h2>
     <input
@@ -41,7 +42,12 @@
     
     <button id = "generateBtn">Generate My Card</button>
   </div>
+  </section>
 
+
+
+  <section id="cardPage" class="page hidden">
+  <div class="cardWrap">
   <div class="card">
 
     <!-- User photo -->
@@ -79,6 +85,9 @@
     </div>
 
   </div>
+  <button id="backBtn">Edit</button>
+  </div>
+</section>
   <script src = "script.js"></script>
 </body>
 </html>
